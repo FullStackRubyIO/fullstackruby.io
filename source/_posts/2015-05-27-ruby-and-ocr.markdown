@@ -17,6 +17,8 @@ have built hundreds of bots and libraries that use them in interesting ways. A t
 bots on Reddit. Extracting text from images on sites like Tumblr or Pinterest that have overlay text commonly
 also can be used in order to further add natural language analysis data into models to predict it.
 
+<!-- more -->
+
 ## Beginning steps
 
 There are two potential options for building this in the simplest scale. We will go through building the server
@@ -27,7 +29,6 @@ First, we have to install some dependencies. As always, configuring your environ
 
 > This post has been tested on Ubuntu version 14.04 but it should work for 12.x and 13.x versions as well. If you're running OSX, you can use [VirtualBox](http://osxdaily.com/2012/03/27/install-run-ubuntu-linux-virtualbox/) or a droplet on [DigitalOcean](https://www.digitalocean.com/) (recommended!) to create the appropriate environment.
 
-<!-- more -->
 
 ### Downloading dependencies
 

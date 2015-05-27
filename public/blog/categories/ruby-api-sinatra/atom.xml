@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ruby,api,sinatra | Full Stack Ruby]]></title>
   <link href="http://fullstackruby.herokuapp.com/blog/categories/ruby-api-sinatra/atom.xml" rel="self"/>
   <link href="http://fullstackruby.herokuapp.com/"/>
-  <updated>2015-05-27T13:16:30-07:00</updated>
+  <updated>2015-05-27T13:19:13-07:00</updated>
   <id>http://fullstackruby.herokuapp.com/</id>
   <author>
     <name><![CDATA[Collective]]></name>
@@ -30,6 +30,9 @@ have built hundreds of bots and libraries that use them in interesting ways. A t
 bots on Reddit. Extracting text from images on sites like Tumblr or Pinterest that have overlay text commonly
 also can be used in order to further add natural language analysis data into models to predict it.</p>
 
+<!-- more -->
+
+
 <h2>Beginning steps</h2>
 
 <p>There are two potential options for building this in the simplest scale. We will go through building the server
@@ -39,9 +42,6 @@ and application based around this. The other is to generate the HTML serverside.
 <p>First, we have to install some dependencies. As always, configuring your environment is 90% of the fun.</p>
 
 <blockquote><p>This post has been tested on Ubuntu version 14.04 but it should work for 12.x and 13.x versions as well. If you&rsquo;re running OSX, you can use <a href="http://osxdaily.com/2012/03/27/install-run-ubuntu-linux-virtualbox/">VirtualBox</a> or a droplet on <a href="https://www.digitalocean.com/">DigitalOcean</a> (recommended!) to create the appropriate environment.</p></blockquote>
-
-<!-- more -->
-
 
 <h3>Downloading dependencies</h3>
 
