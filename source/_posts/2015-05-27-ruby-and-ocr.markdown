@@ -3,7 +3,7 @@ layout: post
 title: "Ruby &amp; OCR"
 date: 2015-05-27 12:45:41 -0700
 comments: true
-categories: ruby,api,sinatra
+categories: ruby webdev
 ---
 
 #### (Adapted from [@yburyug's](http://www.github.com/ybur-yug) original Python guide)
@@ -206,7 +206,6 @@ now we can actually make a file to pass this test...
 
 ```ruby
 require 'sinatra'
-require 'json'
 
 get "/" do
   "hello world"
@@ -242,15 +241,20 @@ And now if we define our route to take a POST request instead of a GET request:
 
 ```
 ...
-post '/' do
-  if params['image_url']
-    { image_text: OcrEngine.new.parse_image(params['image_url'] }.to_json
-  else
-    { error: "Please supply an `image_url` parameter }.to_json
+post '/image_text' do
+  image_url = params.fetch('image_url')
+  { image_text: OcrEngine.new.parse_text(image_url) }.to_json
+  rescue KeyError
+    { error: 'please provide an `image_url` parameter' }.to_json
   end
 end
 ...
 ```
 
-
-# This is super ghetto. I'm gonna refine it in the coming day(s). Don't worry
+## What Next?
+This is becoming a bit of a series. After this initial bout, we will move on to first
+accept image files as well as URLs. Then, we will get into proper mocking for the specs
+and get them back up to speed. Following this we will implement a database, and deploy
+to Heroku. After deployment, we will take this simple sinatra application and drop it 
+into a Volt or Rails application. It will be a long ride, but will take you from 0 to a production
+ready application that touches multiple facets of Ruby and webdev overall.
