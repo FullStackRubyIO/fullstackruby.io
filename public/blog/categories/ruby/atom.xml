@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Ruby, | Full Stack Ruby]]></title>
-  <link href="http://yoursite.com/blog/categories/ruby/atom.xml" rel="self"/>
-  <link href="http://yoursite.com/"/>
-  <updated>2015-05-27T13:01:58-07:00</updated>
-  <id>http://yoursite.com/</id>
+  <link href="http://fullstackruby.herokuapp.com/blog/categories/ruby/atom.xml" rel="self"/>
+  <link href="http://fullstackruby.herokuapp.com/"/>
+  <updated>2015-05-27T13:16:30-07:00</updated>
+  <id>http://fullstackruby.herokuapp.com/</id>
   <author>
     <name><![CDATA[Collective]]></name>
     
@@ -15,12 +15,12 @@
   
   <entry>
     <title type="html"><![CDATA[Introduction to Volt Tasks]]></title>
-    <link href="http://yoursite.com/blog/2015/05/27/introduction-to-volt-tasks/"/>
+    <link href="http://fullstackruby.herokuapp.com/blog/2015/05/27/introduction-to-volt-tasks/"/>
     <updated>2015-05-27T12:20:08-07:00</updated>
-    <id>http://yoursite.com/blog/2015/05/27/introduction-to-volt-tasks</id>
+    <id>http://fullstackruby.herokuapp.com/blog/2015/05/27/introduction-to-volt-tasks</id>
     <content type="html"><![CDATA[<h1>Screencast - <a href="http://www.github.com/rickcarlino">@rickcarlino</a></h1>
 
-<iframe width="1000" height="540" src="https://www.youtube.com/embed/th0UKrSFdo0" frameborder="0" allowfullscreen></iframe>
+<iframe width="500" height="280" src="https://www.youtube.com/embed/th0UKrSFdo0" frameborder="0" allowfullscreen></iframe>
 
 
 <h1>Asciicast - <a href="http://www.github.com/yburyug">@ybur-yug</a></h1>
@@ -190,12 +190,12 @@ communicating both with 3rd party API&rsquo;s and our own server.</p>
   
   <entry>
     <title type="html"><![CDATA[A Volt Chat Application in Ten Minutes]]></title>
-    <link href="http://yoursite.com/blog/2015/05/27/a-volt-chat-application-in-ten-minutes/"/>
+    <link href="http://fullstackruby.herokuapp.com/blog/2015/05/27/a-volt-chat-application-in-ten-minutes/"/>
     <updated>2015-05-27T11:31:48-07:00</updated>
-    <id>http://yoursite.com/blog/2015/05/27/a-volt-chat-application-in-ten-minutes</id>
+    <id>http://fullstackruby.herokuapp.com/blog/2015/05/27/a-volt-chat-application-in-ten-minutes</id>
     <content type="html"><![CDATA[<h1>Screencast - <a href="http://www.github.com/rickcarlino">@rickcarlino</a></h1>
 
-<iframe width="1000" height="540" src="https://www.youtube.com/embed/rc4GR04KUy0" frameborder="0" allowfullscreen></iframe>
+<iframe width="500" height="280" src="https://www.youtube.com/embed/rc4GR04KUy0" frameborder="0" allowfullscreen></iframe>
 
 
 <h1>Asciicast - <a href="http://www.github.com/yburyug">@ybur-yug</a></h1>

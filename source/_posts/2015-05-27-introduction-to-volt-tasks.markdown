@@ -8,7 +8,7 @@ categories: ruby, volt
 
 # Screencast - [@rickcarlino](http://www.github.com/rickcarlino)
 
-<iframe width="1000" height="540" src="https://www.youtube.com/embed/th0UKrSFdo0" frameborder="0" allowfullscreen></iframe>
+<iframe width="500" height="280" src="https://www.youtube.com/embed/th0UKrSFdo0" frameborder="0" allowfullscreen></iframe>
 
 # Asciicast - [@ybur-yug](http://www.github.com/yburyug)
 

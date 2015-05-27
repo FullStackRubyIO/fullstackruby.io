@@ -3,10 +3,10 @@ layout: post
 title: "Ruby &amp; OCR"
 date: 2015-05-27 12:45:41 -0700
 comments: true
-categories: 
+categories: ruby,api,sinatra
 ---
 
-#### (Adapted from my original Python guide)
+#### (Adapted from [@yburyug's](http://www.github.com/ybur-yug) original Python guide)
 
 ## Why?
 A) Obviously it just sounds fun as shit.
