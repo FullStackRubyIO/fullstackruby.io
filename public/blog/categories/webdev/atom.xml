@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Webdev, | Full Stack Ruby]]></title>
   <link href="http://yoursite.com/blog/categories/webdev/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2015-05-27T12:11:29-07:00</updated>
+  <updated>2015-05-27T12:22:37-07:00</updated>
   <id>http://yoursite.com/</id>
   <author>
     <name><![CDATA[Collective]]></name>
@@ -74,6 +74,9 @@ end
 </code></pre>
 
 <p>If we use the <code>field</code> helper, we get some wonderful validations and sanitazation for our input for essentially free.</p>
+
+<!-- more -->
+
 
 <h2>Users!</h2>
 

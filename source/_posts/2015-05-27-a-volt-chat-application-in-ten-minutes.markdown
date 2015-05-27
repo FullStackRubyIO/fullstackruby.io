@@ -64,6 +64,8 @@ end
 
 If we use the `field` helper, we get some wonderful validations and sanitazation for our input for essentially free.
 
+
+<!-- more -->
 ## Users!
 
 Since this is a chat app, we're going to need a way of handling ownership. Luckily, Volt comes with user management by default, and also
