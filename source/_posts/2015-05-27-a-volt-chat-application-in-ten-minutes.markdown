@@ -247,13 +247,12 @@ message.body = 'Hello, world!'
 message
 ```
 
-# Scene 12: initializing empty models for forms
-
 ```
 ...
               <input type="text" class="form-control" placeholder="Enter a message" value="{{ page._form._body }}">
 ...
 ```
+
 With our new understanding of how models work, we must populate an empty message model for our form to use. This will need to happen in the controller
 
 Our form is bound to page._form, so I will first write a method that populates some empty data.

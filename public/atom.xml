@@ -4,7 +4,7 @@
   <title><![CDATA[Full Stack Ruby]]></title>
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2015-05-27T12:04:15-07:00</updated>
+  <updated>2015-05-27T12:11:29-07:00</updated>
   <id>http://yoursite.com/</id>
   <author>
     <name><![CDATA[Collective]]></name>
@@ -339,7 +339,7 @@ of square brackets.</p>
 </span></code></pre></td></tr></table></div></figure>
 
 
-<h1>Scene 12: initializing empty models for forms</h1>
+
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
