@@ -206,6 +206,7 @@ now we can actually make a file to pass this test...
 
 ```ruby
 require 'sinatra'
+require 'json'
 
 get "/" do
   "hello world"
@@ -240,13 +241,15 @@ end
 And now if we define our route to take a POST request instead of a GET request:
 
 ```
+...
 post '/' do
   if params['image_url']
-    OcrEngine.new.parse_image(params['image_url']
+    { image_text: OcrEngine.new.parse_image(params['image_url'] }.to_json
   else
-    "Please supply an `image_url` parameter
+    { error: "Please supply an `image_url` parameter }.to_json
   end
 end
+...
 ```
 
 
