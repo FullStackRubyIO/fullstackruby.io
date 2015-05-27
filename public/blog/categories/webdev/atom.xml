@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Webdev, | Full Stack Ruby]]></title>
   <link href="http://yoursite.com/blog/categories/webdev/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2015-05-27T12:22:37-07:00</updated>
+  <updated>2015-05-27T12:29:51-07:00</updated>
   <id>http://yoursite.com/</id>
   <author>
     <name><![CDATA[Collective]]></name>
@@ -18,14 +18,17 @@
     <link href="http://yoursite.com/blog/2015/05/27/a-volt-chat-application-in-ten-minutes/"/>
     <updated>2015-05-27T11:31:48-07:00</updated>
     <id>http://yoursite.com/blog/2015/05/27/a-volt-chat-application-in-ten-minutes</id>
-    <content type="html"><![CDATA[<h1>Screencast</h1>
+    <content type="html"><![CDATA[<h1>Screencast - <a href="http://www.github.com/rickcarlino">@rickcarlino</a></h1>
 
 <iframe width="1000" height="540" src="https://www.youtube.com/embed/rc4GR04KUy0" frameborder="0" allowfullscreen></iframe>
 
 
-<h1>Asciicast</h1>
+<h1>Asciicast - <a href="http://www.github.com/yburyug">@ybur-yug</a></h1>
 
 <p><a href="https://github.com/DataMelon/volt-chat-demo">Source</a></p>
+
+<!-- more -->
+
 
 <h2>Building a Realtime Chat Application Using Only Ruby</h2>
 
@@ -74,9 +77,6 @@ end
 </code></pre>
 
 <p>If we use the <code>field</code> helper, we get some wonderful validations and sanitazation for our input for essentially free.</p>
-
-<!-- more -->
-
 
 <h2>Users!</h2>
 

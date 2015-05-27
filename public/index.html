@@ -9,7 +9,7 @@
   <meta name="author" content="Collective">
 
   
-  <meta name="description" content="Volt Tasks - An Introduction Getting Started First, let&rsquo;s get a basic application set up. I will assume you&rsquo;ve already dug around a &hellip;">
+  <meta name="description" content="Screencast - @rickcarlino Asciicast - @ybur-yug ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -122,48 +122,12 @@
   </header>
 
 
-  <div class="entry-content"><h1>Volt Tasks - An Introduction</h1>
+  <div class="entry-content"><h1>Screencast - <a href="http://www.github.com/rickcarlino">@rickcarlino</a></h1>
 
-<h2>Getting Started</h2>
+<iframe width="1000" height="540" src="https://www.youtube.com/embed/th0UKrSFdo0" frameborder="0" allowfullscreen></iframe>
 
-<p>First, let&rsquo;s get a basic application set up. I will assume you&rsquo;ve already dug around a simple project, but if you
-are completely new to Volt I would recommend reading through the documentation <a href="http://docs.voltframework.com">here</a>.
-We create a project with a simple</p>
 
-<p><code>volt new project_name</code></p>
-
-<p>And it will bundle automatically. However, if you prefer to bundle to a local path like I do using:</p>
-
-<p><code>bundle --path vendor/bundle</code></p>
-
-<p>This is what you should see after creating your first application:</p>
-
-<p><img src="http://i.imgur.com/ujb4F0E.gif" alt="step 1" /></p>
-
-<p>Now that we have a project, we can fire up our server and have the application start to run. One of the best things about
-development in Volt is the server will automatically reload your new code. So, start a server in a separate terminal and
-proceed to generate a task now.</p>
-
-<p>(in a new terminal)
-<code>bundle exec volt s</code></p>
-
-<p>(in the original)
-<code>bundle exec volt g task stat</code></p>
-
-<p>Now, let&rsquo;s see what that gets us:</p>
-
-<p><img src="http://i.imgur.com/8r3VaJQ.gif" alt="step 2" /></p>
-
-<p>So we have a Volt task, and the relevent spec. Let&rsquo;s open up the default task file and check it out:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='RUBY'><span class='line'><span class="k">class</span> <span class="nc">StatTask</span> <span class="o">&lt;</span> <span class="no">Volt</span><span class="o">::</span><span class="no">Task</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure>
-
+<h1>Asciicast - <a href="http://www.github.com/yburyug">@ybur-yug</a></h1>
 
 </div>
   
@@ -198,71 +162,14 @@ proceed to generate a task now.</p>
   </header>
 
 
-  <div class="entry-content"><h1>Screencast</h1>
+  <div class="entry-content"><h1>Screencast - <a href="http://www.github.com/rickcarlino">@rickcarlino</a></h1>
 
 <iframe width="1000" height="540" src="https://www.youtube.com/embed/rc4GR04KUy0" frameborder="0" allowfullscreen></iframe>
 
 
-<h1>Asciicast</h1>
+<h1>Asciicast - <a href="http://www.github.com/yburyug">@ybur-yug</a></h1>
 
 <p><a href="https://github.com/DataMelon/volt-chat-demo">Source</a></p>
-
-<h2>Building a Realtime Chat Application Using Only Ruby</h2>
-
-<h2>Why?</h2>
-
-<p>If you want to build a realtime chat app using Ruby, Volt makes a great choice because all of the updates happen in realtime like you
-see here, and you can write your frontend and backend code in Ruby. If you have not heard of Volt, follow along and you will start to
-see some great benefits. In this case, we will especially illustrate how to handle persistance and ownership for all of our data.</p>
-
-<h2>Setup</h2>
-
-<p>Like always, we&rsquo;re going to create a new app using the <code>volt new</code> command</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>volt new chat</span></code></pre></td></tr></table></div></figure>
-
-
-<p>then we can <code>cd chat</code> to get to directory and get started.</p>
-
-<h2>Models!</h2>
-
-<p>First of all, we are writing in Ruby. So, Objects are our best friend! In Volt&rsquo;s case, the standard model object is <code>Volt::Model</code>.
-This will let us encapsulate business logic, pesistance, and relational pieces with other parts of the code in one simple area.
-For those of you who may be wondering, Volt is a MVVM framework, not MVC. For the curious, read further <a href="http://stackoverflow.com/questions/667781/what-is-the-difference-between-mvc-and-mvvm">here</a>.</p>
-
-<p>To make the model,</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>volt g model message</span></code></pre></td></tr></table></div></figure>
-
-
-<p><code>vim app/main/models/message.rb</code>
-I prefer to use <code>vim</code>, but replace that keyword with whatever the *nix command for your editor of choice is.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">Message</span> <span class="o">&lt;</span> <span class="no">Volt</span><span class="o">::</span><span class="no">Model</span>
-</span><span class='line'><span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>As you can see, this is a very simple class, that outside of inheritance, looks like a regular Ruby class.</p>
-
-<p>MongoDB is a schemaless database, so we don&rsquo;t have to define our fields ahead of time. In today&rsquo;s example, we will though. This gives us the ability to add type validations and some other nice features I&rsquo;ll cover later.</p>
-
-<p>We can declare a field&rsquo;s name and type via the <code>field</code> method. This makes life easier by keeping our data relatively consistent.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">Message</span> <span class="o">&lt;</span> <span class="no">Volt</span><span class="o">::</span><span class="no">Model</span>
-</span><span class='line'>  <span class="n">field</span> <span class="ss">:body</span><span class="p">,</span> <span class="nb">String</span>
-</span><span class='line'><span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>If we use the <code>field</code> helper, we get some wonderful validations and sanitazation for our input for essentially free.</p>
 
 </div>
   

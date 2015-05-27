@@ -6,6 +6,13 @@ comments: true
 categories: ruby, volt
 ---
 
+# Screencast - [@rickcarlino](http://www.github.com/rickcarlino)
+
+<iframe width="1000" height="540" src="https://www.youtube.com/embed/th0UKrSFdo0" frameborder="0" allowfullscreen></iframe>
+
+# Asciicast - [@ybur-yug](http://www.github.com/yburyug)
+
+<!-- more -->
 # Volt Tasks - An Introduction
 
 ## Getting Started
@@ -45,7 +52,6 @@ class StatTask < Volt::Task
 
 end
 ```
-<!-- more -->
 
 Now, lets add some code to get information from the backend using this task we have generated. Volt tasks exclusively run
 asynchronously on the backend.

@@ -6,13 +6,15 @@ comments: true
 categories: ruby, webdev, volt
 ---
 
-# Screencast 
+# Screencast - [@rickcarlino](http://www.github.com/rickcarlino)
 
 <iframe width="1000" height="540" src="https://www.youtube.com/embed/rc4GR04KUy0" frameborder="0" allowfullscreen></iframe>
 
-# Asciicast
+# Asciicast - [@ybur-yug](http://www.github.com/yburyug)
 
 [Source](https://github.com/DataMelon/volt-chat-demo)
+
+<!-- more -->
 
 ## Building a Realtime Chat Application Using Only Ruby
 
@@ -65,7 +67,6 @@ end
 If we use the `field` helper, we get some wonderful validations and sanitazation for our input for essentially free.
 
 
-<!-- more -->
 ## Users!
 
 Since this is a chat app, we're going to need a way of handling ownership. Luckily, Volt comes with user management by default, and also
